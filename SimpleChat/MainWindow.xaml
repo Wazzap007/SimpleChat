@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleChat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="720" Width="1280" FontSize="20" FontFamily="Consolas" Margin="0" Padding="0" Background="LightSteelBlue">
+	<Grid x:Name="MainGrid" Background="LightSteelBlue" Margin="20
+		  ">
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Label Name="NickLabel" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Enter your nick</Label>
+		<TextBox Name="NickTextBox" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
+		<Button Name="EnterChatBtn" Grid.Row="1" Grid.Column="6" Height="50" Click="EnterChatBtn_Click">Enter Chat</Button>
+		<Button Name="LeaveChatBtn" Grid.Row="2" Grid.Column="6" Height="50" IsEnabled="False" Click="LeaveChatBtn_Click">Leave Chat</Button>
+		<TextBox Name="MainChatTextBox" Grid.Row="4" Grid.ColumnSpan="8" Grid.RowSpan="4" Background="Black" Foreground="LightGreen"/>
+		<TextBox Name="MessageTextBox" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4"/>
+		<Button Name="SendMessageBtn" Grid.Row="9" Grid.Column="6" Click="SendMessageBtn_Click">Send</Button>
+	</Grid>
 </Window>
