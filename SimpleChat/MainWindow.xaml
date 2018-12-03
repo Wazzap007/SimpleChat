@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:SimpleChat"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280" FontSize="20" FontFamily="Consolas" Margin="0" Padding="0" Background="LightSteelBlue">
-	<Grid x:Name="MainGrid" Background="LightSteelBlue" Margin="20
-		  ">
+	<Grid x:Name="MainGrid" Background="LightSteelBlue" Margin="20">
 		<Grid.RowDefinitions>
 			<RowDefinition />
 			<RowDefinition />
