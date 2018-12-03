@@ -31,12 +31,12 @@
 			<ColumnDefinition />
 			<ColumnDefinition />
 		</Grid.ColumnDefinitions>
-		<Label Name="NickLabel" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Enter your nick</Label>
-		<TextBox Name="NickTextBox" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2"/>
-		<Button Name="EnterChatBtn" Grid.Row="1" Grid.Column="6" Height="50" Click="EnterChatBtn_Click">Enter Chat</Button>
-		<Button Name="LeaveChatBtn" Grid.Row="2" Grid.Column="6" Height="50" IsEnabled="False" Click="LeaveChatBtn_Click">Leave Chat</Button>
-		<TextBox Name="MainChatTextBox" Grid.Row="4" Grid.ColumnSpan="8" Grid.RowSpan="4" Background="Black" Foreground="LightGreen"/>
-		<TextBox Name="MessageTextBox" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4"/>
-		<Button Name="SendMessageBtn" Grid.Row="9" Grid.Column="6" Click="SendMessageBtn_Click">Send</Button>
+		<Label Name="NickLabel" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center">Введите свой ник</Label>
+		<TextBox Name="NickTextBox" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20"/>
+		<Button Name="EnterChatBtn" Grid.Row="1" Grid.Column="6" Height="50" Click="EnterChatBtn_Click">Войти</Button>
+		<Button Name="LeaveChatBtn" Grid.Row="2" Grid.Column="6" Height="50" IsEnabled="False" Click="LeaveChatBtn_Click">Покинуть чат</Button>
+		<TextBox Name="MainChatTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Grid.Row="4" Grid.ColumnSpan="8" Grid.RowSpan="4" Background="Black" Foreground="LightGreen"/>
+		<TextBox Name="MessageTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+		<Button Name="SendMessageBtn" Grid.Row="9" Grid.Column="6" Click="SendMessageBtn_Click">Отправить</Button>
 	</Grid>
 </Window>
